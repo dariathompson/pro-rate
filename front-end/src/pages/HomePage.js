@@ -6,6 +6,7 @@ import { listServices } from '../actions/serviceActions';
 function HomePage(props) {
 
   const serviceList = useSelector(state => state.serviceList);
+  console.log(serviceList)
   const { services, loading, error } = serviceList;
   const dispatch = useDispatch();
 
