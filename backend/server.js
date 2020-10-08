@@ -13,7 +13,7 @@ app.get('/api/services/:id', (req, res) => {
     if(service){
         res.send(service)
     }else{
-        res.status(404).send({msg: 'Product not found'})
+        res.status(404).send({msg: 'Service not found'})
     }
 })
 
