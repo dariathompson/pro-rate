@@ -2,6 +2,7 @@ import React from 'react';
 import './App.css';
 import {BrowserRouter, Link, Route} from 'react-router-dom';
 import HomePage from './pages/HomePage'
+import ServicePage from './pages/ServicePage'
 
 function App() {
     const openMenu = () => {
@@ -36,6 +37,7 @@ function App() {
         </aside>
         <main className="main">
           <div className="content">
+            <Route path='/service/:id' component={ServicePage} />
             <Route path='/' exact={true} component={HomePage} />
           </div>
         </main>
